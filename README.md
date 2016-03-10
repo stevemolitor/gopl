@@ -1,0 +1,1 @@
+Exercises and sample programs from "The Go Programming Language", Donovan and Kernighan.
