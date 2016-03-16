@@ -31,15 +31,12 @@ func serveSvg(w http.ResponseWriter, r *http.Request) {
 
     params := r.URL.Query()
 
-    var height, width int
-    var err error
-
-    height, err = strconv.Atoi(params.Get("height"))
+    height, err := strconv.Atoi(params.Get("height"))
     if err != nil {
         height = defaultHeight
     }
 
-    width, err = strconv.Atoi(params.Get("width"))
+    width, err := strconv.Atoi(params.Get("width"))
     if err != nil {
         width = defaultWidth
     }
