@@ -23,9 +23,15 @@ func bitsDiff(a, b [32]byte) int {
     return count
 }
 
+const usage = `Exercie 4.1 computes the number of bits different between to sha256 values.
+
+Usage:
+    ./4.2 [STRING1] [STRING2]
+`
+
 func main() {
     if len(os.Args) < 3 {
-        fmt.Fprintln(os.Stderr, "Must supply two string arguments")
+        fmt.Fprintln(os.Stderr, usage)
         os.Exit(1)
     }
 
